@@ -1,0 +1,15 @@
+@import 'header';
+
+@import 'footer';
+
+
+#page-inner {
+	width: $size__site-width;
+	margin: 0 auto;
+	background-color: $color__background-body;
+	border: 1px solid $color__border-default;
+	padding: 20px;
+}
+#page {
+	background-color: #eee;
+}

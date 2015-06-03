@@ -770,6 +770,40 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+/* line 1, ../sass/layout/_content-sidebar.scss */
+.content-area {
+  float: left;
+  margin: 0 -25% 0 0;
+  width: 75%;
+}
+
+/* line 11, ../sass/layout/_content-sidebar.scss */
+.site-content .widget-area {
+  float: right;
+  overflow: hidden;
+  width: 25%;
+}
+
+/* line 17, ../sass/layout/_content-sidebar.scss */
+.site-footer {
+  clear: both;
+  width: 75%;
+}
+
+/* line 6, ../sass/layout/_layout.scss */
+#page-inner {
+  width: 1024px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+/* line 13, ../sass/layout/_layout.scss */
+#page {
+  background-color: #eee;
+}
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
