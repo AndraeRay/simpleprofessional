@@ -790,6 +790,11 @@ a:hover, a:active {
   width: 75%;
 }
 
+/* line 1, ../sass/layout/_header.scss */
+.site-branding {
+  border-bottom: 1px solid #ccc;
+}
+
 /* line 6, ../sass/layout/_layout.scss */
 #page-inner {
   width: 1024px;
