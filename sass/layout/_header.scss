@@ -1,3 +1,16 @@
 .site-branding {
 	border-bottom: 1px solid $color__border-default;
+	
+}
+
+.site-title {
+	a, 
+	a:visited, 
+	a:hover, 
+	a:active {
+		text-decoration: none;
+		letter-spacing: 2px;
+		color: $color__logo;
+		font-family: georgia;
+	}
 }

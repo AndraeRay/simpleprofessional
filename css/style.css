@@ -796,6 +796,17 @@ a:hover, a:active {
   border-bottom: 1px solid #ccc;
 }
 
+/* line 7, ../sass/layout/_header.scss */
+.site-title a,
+.site-title a:visited,
+.site-title a:hover,
+.site-title a:active {
+  text-decoration: none;
+  letter-spacing: 2px;
+  color: #06843b;
+  font-family: georgia;
+}
+
 /* line 6, ../sass/layout/_layout.scss */
 #page-inner {
   max-width: 1024px;

@@ -4,6 +4,11 @@
 	font-size: $sizeValue * 1rem;
 }
 
+//accepts pixels and calls font-size function to returm rem equivalent
+@mixin px-convert($pxValue: 16) {
+	@include font-size( ($pxValue / 16) );
+}
+
 // Center block
 @mixin center-block {
 	display: block;
