@@ -41,6 +41,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
+/* logo area */
 /* Responsive Mixins */
 /*--------------------------------------------------------------
 # Normalize
@@ -793,10 +794,15 @@ a:hover, a:active {
 
 /* line 1, ../sass/layout/_header.scss */
 .site-branding {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 10px solid blue;
+  margin-bottom: 10px;
 }
 
 /* line 7, ../sass/layout/_header.scss */
+.site-title {
+  margin-bottom: .1em;
+}
+/* line 8, ../sass/layout/_header.scss */
 .site-title a,
 .site-title a:visited,
 .site-title a:hover,
@@ -805,6 +811,13 @@ a:hover, a:active {
   letter-spacing: 2px;
   color: #06843b;
   font-family: georgia;
+}
+
+/* line 20, ../sass/layout/_header.scss */
+.site-description {
+  font-size: 16px;
+  font-size: 1rem;
+  margin: 0 0 10px;
 }
 
 /* line 6, ../sass/layout/_layout.scss */

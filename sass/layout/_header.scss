@@ -1,5 +1,6 @@
 .site-branding {
-	border-bottom: 1px solid $color__border-default;
+	border-bottom: 10px solid $color_border-heading;
+	margin-bottom: 10px;
 	
 }
 
@@ -13,4 +14,10 @@
 		color: $color__logo;
 		font-family: georgia;
 	}
+	margin-bottom: .1em;
+}
+
+.site-description {
+	@include px-convert(16);
+	margin: 0 0 10px;
 }
