@@ -21,3 +21,35 @@
 @mixin clearfix-after() {
 	clear: both;
 }
+
+/* Responsive Mixins */
+
+@mixin mobile {
+	@media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width - 1px}) {
+		@content;
+	}
+}
+
+@mixin non-mobile {
+	@media (min-width: #{$tablet-width}) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media (min-width: #{$desktop-width}) {
+		@content;
+	}
+}
+
+@mixin desktop-wide {
+	@media (min-width: #{$desktop-wide-width}) {
+		@content;
+	}
+}
