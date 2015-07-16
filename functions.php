@@ -150,3 +150,8 @@ function wpi_stylesheet_uri($stylesheet_uri, $stylesheet_dir_uri){
 }
 add_filter('stylesheet_uri','wpi_stylesheet_uri',10,2);
 
+/**
+ * Remove Default wordpess widgets
+ */
+require get_template_directory() . '/inc/widgets-disable-default.php';
+
