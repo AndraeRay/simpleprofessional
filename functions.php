@@ -155,3 +155,8 @@ add_filter('stylesheet_uri','wpi_stylesheet_uri',10,2);
  */
 require get_template_directory() . '/inc/widgets-disable-default.php';
 
+/**
+ * Post helpers
+ */
+require get_template_directory() . '/inc/post-helpers.php';
+
