@@ -18,3 +18,17 @@ function get_random_post_offset( $post_type ){
 	$random_offset = rand(0, $num_posts - 1);
 	return $random_offset;
 };
+
+/**
+ * Does post lookup and displays posts
+ */
+function sp_retrieve_post($post_type, $posts_per_page, $offset) {
+	$query_args = array( 'post_type' => $post_type, 'posts_per_page' => $posts_per_page, 'offset' => $offset );
+	$loop = new WP_Query( $query_args );
+	while ( $loop->have_posts() ) : $loop->the_post();
+	  the_title();
+	  echo '<div class="entry-content">';
+	  the_content();
+	  echo '</div>';
+	endwhile;
+};
