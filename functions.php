@@ -160,3 +160,8 @@ require get_template_directory() . '/inc/widgets-disable-default.php';
  */
 require get_template_directory() . '/inc/post-helpers.php';
 
+/**
+ * Random testimonial widget
+ */
+require  get_template_directory() . '/inc/widget_random_testimonial.php';
+
