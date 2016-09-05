@@ -17,3 +17,20 @@ a {
 		outline: 0;
 	}
 }
+.header-social {
+	width: 40%;
+	position: absolute;
+	right: -20%;
+	.icon {
+		margin-right: 10px;
+		&.linkedin {
+			background: $sprite-url no-repeat sprite-position($icons, linkedin);
+			padding: 8px 18px;
+		}
+		&.github{
+			background: $sprite-url no-repeat sprite-position($icons, github);
+			padding: 3px 41px;
+
+		}
+	}
+}

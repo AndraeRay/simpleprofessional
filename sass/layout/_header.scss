@@ -1,8 +1,3 @@
-.site-branding {
-	border-bottom: 10px solid $color_border-heading;
-	margin-bottom: 10px;
-	
-}
 
 .site-title {
 	a, 
@@ -15,10 +10,12 @@
 		font-family: georgia;
 	}
 	margin-bottom: .1em;
+	@include px-to-rem(34);
+	border-bottom: 1px dotted $color_border-heading;
 }
 
 .site-description {
-	@include px-convert(16);
+	@include px-to-rem(16);
 	margin: 0 0 10px;
 }
 
@@ -27,4 +24,7 @@
 	position: fixed;
 	background-color: $color__background-body;
 	border-bottom: 1px solid #999;
+}
+#masthead {
+	padding: 10px 15px 3px;
 }

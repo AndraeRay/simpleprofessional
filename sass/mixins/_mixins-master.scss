@@ -5,7 +5,7 @@
 }
 
 //accepts pixels and calls font-size function to returm rem equivalent
-@mixin px-convert($pxValue: 16) {
+@mixin px-to-rem($pxValue: 16) {
 	@include font-size( ($pxValue / 16) );
 }
 
