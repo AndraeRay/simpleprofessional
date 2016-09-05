@@ -21,3 +21,10 @@
 	@include px-convert(16);
 	margin: 0 0 10px;
 }
+
+#page-header {
+	width: 100%;
+	position: fixed;
+	background-color: $color__background-body;
+	border-bottom: 1px solid #999;
+}
