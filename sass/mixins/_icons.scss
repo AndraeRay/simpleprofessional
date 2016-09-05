@@ -1,0 +1,9 @@
+@import "compass/utilities/sprites";
+
+$icons: sprite-map(
+	"sprite/*.png",
+	$spacing: 5px, 
+	$layout: vertical
+);
+
+$sprite-url: sprite-url($icons);
