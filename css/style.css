@@ -573,17 +573,18 @@ a:hover, a:active {
   width: 40%;
   position: absolute;
   right: -20%;
+  top: 8%;
 }
-/* line 24, ../sass/navigation/_links.scss */
+/* line 25, ../sass/navigation/_links.scss */
 .header-social .icon {
   margin-right: 10px;
 }
-/* line 26, ../sass/navigation/_links.scss */
+/* line 27, ../sass/navigation/_links.scss */
 .header-social .icon.linkedin {
   background: url('../images/sprite-s3f1c4d6979.png') no-repeat 0 -26px;
   padding: 8px 18px;
 }
-/* line 30, ../sass/navigation/_links.scss */
+/* line 31, ../sass/navigation/_links.scss */
 .header-social .icon.github {
   background: url('../images/sprite-s3f1c4d6979.png') no-repeat 0 0;
   padding: 3px 41px;
@@ -845,11 +846,23 @@ a:hover, a:active {
   position: fixed;
   background-color: #fff;
   border-bottom: 1px solid #999;
+  transition: all .5s linear;
+}
+/* line 28, ../sass/layout/_header.scss */
+#page-header.fixed {
+  box-shadow: 5px 6px 6px #999;
+  -webkit-box-shadow: 5px 6px 6px #999;
+  -moz-box-shadow: 5px 6px 6px #999;
 }
 
-/* line 28, ../sass/layout/_header.scss */
+/* line 34, ../sass/layout/_header.scss */
 #masthead {
   padding: 10px 15px 3px;
+}
+
+/* line 37, ../sass/layout/_header.scss */
+.site-branding {
+  margin-bottom: 1em;
 }
 
 /* line 6, ../sass/layout/_layout.scss */
@@ -859,7 +872,7 @@ a:hover, a:active {
   margin: 0 auto;
   background-color: #fff;
   border: 1px solid #ccc;
-  padding: 10px 20px 20px;
+  padding: 105px 20px 20px;
 }
 
 /* line 14, ../sass/layout/_layout.scss */

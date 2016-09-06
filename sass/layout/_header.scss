@@ -24,7 +24,16 @@
 	position: fixed;
 	background-color: $color__background-body;
 	border-bottom: 1px solid #999;
+	transition: all .5s linear;
+	&.fixed {
+		box-shadow: 5px 6px 6px #999;
+		-webkit-box-shadow: 5px 6px 6px #999;
+		-moz-box-shadow: 5px 6px 6px #999;
+	}
 }
 #masthead {
 	padding: 10px 15px 3px;
+}
+.site-branding {
+	margin-bottom: 1em;
 }
