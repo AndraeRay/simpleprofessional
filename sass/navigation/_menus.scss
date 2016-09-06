@@ -54,6 +54,10 @@
 	a {
 		display: block;
 		text-decoration: none;
+		color: $color__link-primary-nav;
+		&:hover, &:visited, &:active {
+			color: $color__link-primary-nav
+		}
 	}
 
 	.current_page_item > a,

@@ -9,7 +9,7 @@
 		color: $color__logo;
 		font-family: georgia;
 	}
-	margin-bottom: .1em;
+	margin: 0 0 .1em .7em;
 	@include px-to-rem(34);
 	border-bottom: 1px dotted $color_border-heading;
 }

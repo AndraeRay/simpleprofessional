@@ -575,16 +575,22 @@ a:hover, a:active {
   right: -20%;
   top: 8%;
 }
-/* line 25, ../sass/navigation/_links.scss */
+@media (min-width: 320px) and (max-width: 767px) {
+  /* line 20, ../sass/navigation/_links.scss */
+  .header-social {
+    display: none;
+  }
+}
+/* line 28, ../sass/navigation/_links.scss */
 .header-social .icon {
   margin-right: 10px;
 }
-/* line 27, ../sass/navigation/_links.scss */
+/* line 30, ../sass/navigation/_links.scss */
 .header-social .icon.linkedin {
   background: url('../images/sprite-s3f1c4d6979.png') no-repeat 0 -26px;
   padding: 8px 18px;
 }
-/* line 31, ../sass/navigation/_links.scss */
+/* line 34, ../sass/navigation/_links.scss */
 .header-social .icon.github {
   background: url('../images/sprite-s3f1c4d6979.png') no-repeat 0 0;
   padding: 3px 41px;
@@ -642,41 +648,46 @@ a:hover, a:active {
 .main-navigation a {
   display: block;
   text-decoration: none;
+  color: #333;
+}
+/* line 58, ../sass/navigation/_menus.scss */
+.main-navigation a:hover, .main-navigation a:visited, .main-navigation a:active {
+  color: #333;
 }
 
 /* Small menu. */
-/* line 66, ../sass/navigation/_menus.scss */
+/* line 70, ../sass/navigation/_menus.scss */
 .menu-toggle {
   display: none;
 }
 
 @media screen and (max-width: 600px) {
-  /* line 71, ../sass/navigation/_menus.scss */
+  /* line 75, ../sass/navigation/_menus.scss */
   .menu-toggle,
   .main-navigation.toggled .nav-menu {
     display: block;
   }
 
-  /* line 76, ../sass/navigation/_menus.scss */
+  /* line 80, ../sass/navigation/_menus.scss */
   .main-navigation ul {
     display: none;
   }
 }
-/* line 85, ../sass/navigation/_menus.scss */
+/* line 89, ../sass/navigation/_menus.scss */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-/* line 90, ../sass/navigation/_menus.scss */
+/* line 94, ../sass/navigation/_menus.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-/* line 95, ../sass/navigation/_menus.scss */
+/* line 99, ../sass/navigation/_menus.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -817,7 +828,7 @@ a:hover, a:active {
 
 /* line 2, ../sass/layout/_header.scss */
 .site-title {
-  margin-bottom: .1em;
+  margin: 0 0 .1em .7em;
   font-size: 34px;
   font-size: 2.125rem;
   border-bottom: 1px dotted blue;
