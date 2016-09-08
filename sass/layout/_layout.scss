@@ -14,3 +14,15 @@
 #page {
 	background-color: $color__background-wrapper;
 }
+.left-33 {
+	float: left;
+	width: 33%;
+}
+
+.right-66 {
+	float: left;
+	width: 66%;
+}
+.clear-fix{
+	clear: both;
+}

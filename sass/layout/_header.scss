@@ -21,10 +21,11 @@
 
 #page-header {
 	width: 100%;
+	z-index: 9999;
 	position: fixed;
 	background-color: $color__background-body;
 	border-bottom: 1px solid #999;
-	transition: all .5s linear;
+	transition: all .5s ease;
 	&.fixed {
 		box-shadow: 5px 6px 6px #999;
 		-webkit-box-shadow: 5px 6px 6px #999;

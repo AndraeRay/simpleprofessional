@@ -854,24 +854,25 @@ a:hover, a:active {
 /* line 22, ../sass/layout/_header.scss */
 #page-header {
   width: 100%;
+  z-index: 9999;
   position: fixed;
   background-color: #fff;
   border-bottom: 1px solid #999;
-  transition: all .5s linear;
+  transition: all .5s ease;
 }
-/* line 28, ../sass/layout/_header.scss */
+/* line 29, ../sass/layout/_header.scss */
 #page-header.fixed {
   box-shadow: 5px 6px 6px #999;
   -webkit-box-shadow: 5px 6px 6px #999;
   -moz-box-shadow: 5px 6px 6px #999;
 }
 
-/* line 34, ../sass/layout/_header.scss */
+/* line 35, ../sass/layout/_header.scss */
 #masthead {
   padding: 10px 15px 3px;
 }
 
-/* line 37, ../sass/layout/_header.scss */
+/* line 38, ../sass/layout/_header.scss */
 .site-branding {
   margin-bottom: 1em;
 }
@@ -889,6 +890,23 @@ a:hover, a:active {
 /* line 14, ../sass/layout/_layout.scss */
 #page {
   background-color: #eee;
+}
+
+/* line 17, ../sass/layout/_layout.scss */
+.left-33 {
+  float: left;
+  width: 33%;
+}
+
+/* line 22, ../sass/layout/_layout.scss */
+.right-66 {
+  float: left;
+  width: 66%;
+}
+
+/* line 26, ../sass/layout/_layout.scss */
+.clear-fix {
+  clear: both;
 }
 
 /*--------------------------------------------------------------
@@ -927,6 +945,25 @@ a:hover, a:active {
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
+}
+
+/* line 31, ../sass/site/primary/_posts-and-pages.scss */
+.left-33 img {
+  max-height: 160px;
+  left: 25%;
+  right: 25%;
+  position: relative;
+}
+
+/* line 39, ../sass/site/primary/_posts-and-pages.scss */
+.listing-container {
+  position: relative;
+  padding: 10px;
+  transition: all .5s ease;
+}
+/* line 43, ../sass/site/primary/_posts-and-pages.scss */
+.listing-container:hover {
+  background-color: #f2f2f2;
 }
 
 /*--------------------------------------------------------------

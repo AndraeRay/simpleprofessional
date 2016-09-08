@@ -26,3 +26,23 @@
 	clear: both;
 	margin: 0 0 1.5em;
 }
+
+.left-33 {
+	img {
+		max-height: 160px;
+		left: 25%;
+		right: 25%;
+		position: relative;
+	}
+}
+
+.listing-container {
+	position: relative;
+	padding: 10px;
+	transition: all .5s ease;
+	&:hover {
+		background-color: #f2f2f2;
+	}
+
+}
+
