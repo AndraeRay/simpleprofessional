@@ -17,24 +17,25 @@
 
 		$image = get_field('image');
 		$link = get_field('link');
-		$desc = get_field('description'); ?>
+
+		?>
 
 
-		<div class="listing-container">
+		<div class="listing-container equalH-parent">
 		<?php if( !empty($image) ): ?>
-			<section class="left-33"> 
+			<section class="sp-col w25 equalH-child"> 
 				<?php if ( !empty($link)) : echo "<a href='$link' target='_blank'>"; endif; ?>
 					<img src="<?php echo $image['url']; ?>" align="middle" alt="<?php echo $image['alt']; ?>" />
 				<?php if ( !empty($link)) : echo "</a>"; endif; ?>
 			</section>
-			<section class="right-66">
+			<section class="sp-col w75 equalH-child">
 		<?php else: ?>
-				<section class="right-100">
+				<section class="sp-col w100">
 		<?php endif; ?>
 					<?php if ( !empty($link)) : echo "<a href='$link' target='_blank'>"; endif; ?>
 					<h2><?php the_title(); ?></h2>
 					<?php if ( !empty($link)) : echo "</a>"; endif; ?>
-					<span class="Desc"> <?php echo $desc; ?> </span>
+					<span><?php the_content(); ?></span>
 					<span class="additional"> Technologies used </span>
 				 </section>
 				 <div class="clear-fix"></div>

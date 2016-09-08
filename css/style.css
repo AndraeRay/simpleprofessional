@@ -894,18 +894,35 @@ a:hover, a:active {
 }
 
 /* line 17, ../sass/layout/_layout.scss */
-.left-33 {
+.sp-col {
   float: left;
-  width: 33%;
 }
-
+/* line 19, ../sass/layout/_layout.scss */
+.sp-col.w25 {
+  width: 24.9999%;
+}
 /* line 22, ../sass/layout/_layout.scss */
-.right-66 {
-  float: left;
-  width: 66%;
+.sp-col.w33 {
+  width: 33.32222%;
+}
+/* line 25, ../sass/layout/_layout.scss */
+.sp-col.w50 {
+  width: 49.9999%;
+}
+/* line 28, ../sass/layout/_layout.scss */
+.sp-col.w66 {
+  width: 66.6555%;
+}
+/* line 31, ../sass/layout/_layout.scss */
+.sp-col.w75 {
+  width: 74.9999%;
+}
+/* line 34, ../sass/layout/_layout.scss */
+.sp-col.w100 {
+  width: 100%;
 }
 
-/* line 26, ../sass/layout/_layout.scss */
+/* line 38, ../sass/layout/_layout.scss */
 .clear-fix {
   clear: both;
 }
@@ -948,23 +965,26 @@ a:hover, a:active {
   margin: 0 0 1.5em;
 }
 
-/* line 31, ../sass/site/primary/_posts-and-pages.scss */
-.left-33 img {
+/* line 32, ../sass/site/primary/_posts-and-pages.scss */
+.sp-col.w25 img {
   max-height: 160px;
   left: 25%;
   right: 25%;
   position: relative;
+  top: 25%;
+  height: 100%;
+  vertical-align: middle;
+  max-width: 160px;
 }
 
-/* line 39, ../sass/site/primary/_posts-and-pages.scss */
+/* line 45, ../sass/site/primary/_posts-and-pages.scss */
 .listing-container {
   position: relative;
   padding: 10px;
   transition: all .5s ease;
-  margin-bottom: 10px;
   border: 1px dashed #ccc;
 }
-/* line 43, ../sass/site/primary/_posts-and-pages.scss */
+/* line 49, ../sass/site/primary/_posts-and-pages.scss */
 .listing-container:hover {
   background-color: #f2f2f2;
 }

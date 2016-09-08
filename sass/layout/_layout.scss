@@ -14,14 +14,26 @@
 #page {
 	background-color: $color__background-wrapper;
 }
-.left-33 {
+.sp-col {
 	float: left;
-	width: 33%;
-}
-
-.right-66 {
-	float: left;
-	width: 66%;
+	&.w25{
+		width: 24.9999%;
+	}
+	&.w33{
+		width: 33.32222%;
+	}
+	&.w50 {
+		width: 49.9999%;
+	}
+	&.w66 {
+		width: 66.6555%;
+	}
+	&.w75 {
+		width: 74.9999%;
+	}
+	&.w100{
+		width: 100%;
+	}
 }
 .clear-fix{
 	clear: both;
