@@ -16,36 +16,30 @@
 		<?php 
 
 		$image = get_field('image');
+		$link = get_field('link');
+		$desc = get_field('description'); ?>
 
-		if( !empty($image) ): ?>
+
 		<div class="listing-container">
+		<?php if( !empty($image) ): ?>
 			<section class="left-33"> 
-				<img src="<?php echo $image['url']; ?>" align="middle" alt="<?php echo $image['alt']; ?>" />
+				<?php if ( !empty($link)) : echo "<a href='$link' target='_blank'>"; endif; ?>
+					<img src="<?php echo $image['url']; ?>" align="middle" alt="<?php echo $image['alt']; ?>" />
+				<?php if ( !empty($link)) : echo "</a>"; endif; ?>
 			</section>
 			<section class="right-66">
-				<h2><?php the_title(); ?></h2>
-				<span class="Desc"> description </span>
-				<span class="additional"> Technologies used </span>
-			 </section>
-			 <div class="clear-fix"></div>
-		</div>
 		<?php else: ?>
-			<div class="listing-container">
 				<section class="right-100">
+		<?php endif; ?>
+					<?php if ( !empty($link)) : echo "<a href='$link' target='_blank'>"; endif; ?>
 					<h2><?php the_title(); ?></h2>
-					<span class="Desc"> description </span>
+					<?php if ( !empty($link)) : echo "</a>"; endif; ?>
+					<span class="Desc"> <?php echo $desc; ?> </span>
 					<span class="additional"> Technologies used </span>
 				 </section>
 				 <div class="clear-fix"></div>
 			</div>
-		<?php endif; ?>
 
-
-		<?php 
-		$desc = get_field('description');
-
-		echo $desc;
-		?>
 
 	</div><!-- .entry-content -->
 	<?php edit_post_link( __( 'Edit', 'simpleprofessional' ), '<span class="edit-link">', '</span>' ); ?>
