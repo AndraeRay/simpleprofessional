@@ -41,9 +41,6 @@
 		<?php endif; ?>
 
 
-
-		<?php the_content(); ?>
-
 		<?php 
 		$desc = get_field('description');
 

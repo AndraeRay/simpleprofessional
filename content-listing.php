@@ -8,16 +8,16 @@
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-		<div class="entry-meta">
-			<?php simpleprofessional_posted_on(); ?>
-		</div><!-- .entry-meta -->
+				<?php the_content(); ?>
+				<?php edit_post_link( __( 'Edit', 'simpleprofessional' ), '<span class="edit-link">', '</span>' ); ?>
+
+
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
 		<?php 
 			$term = get_field('category');
 		?>
-		<?php the_content(); ?>
 
 				<?php
 					$args = array( 'post_type' => 'sp_listing', 'posts_per_page' => 10, 'cat' => $term );
