@@ -575,27 +575,26 @@ a:hover, a:active {
 
 /* line 20, ../sass/navigation/_links.scss */
 .header-social {
-  width: 40%;
   position: absolute;
-  right: -20%;
+  right: 0%;
   top: 8%;
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 0) and (max-width: 767px) {
   /* line 20, ../sass/navigation/_links.scss */
   .header-social {
     display: none;
   }
 }
-/* line 28, ../sass/navigation/_links.scss */
+/* line 27, ../sass/navigation/_links.scss */
 .header-social .icon {
   margin-right: 10px;
 }
-/* line 30, ../sass/navigation/_links.scss */
+/* line 29, ../sass/navigation/_links.scss */
 .header-social .icon.linkedin {
   background: url('../images/sprite-s3f1c4d6979.png') no-repeat 0 -26px;
   padding: 8px 18px;
 }
-/* line 34, ../sass/navigation/_links.scss */
+/* line 33, ../sass/navigation/_links.scss */
 .header-social .icon.github {
   background: url('../images/sprite-s3f1c4d6979.png') no-repeat 0 0;
   padding: 3px 41px;
@@ -834,7 +833,7 @@ a:hover, a:active {
 
 /* line 2, ../sass/layout/_header.scss */
 .site-title {
-  margin: 0 0 .1em .7em;
+  margin: 0 0 .1em 0;
   font-size: 34px;
   font-size: 2.125rem;
   border-bottom: 1px dotted blue;
@@ -845,19 +844,20 @@ a:hover, a:active {
 .site-title a:hover,
 .site-title a:active {
   text-decoration: none;
-  letter-spacing: 2px;
+  letter-spacing: 12px;
   color: #06843b;
+  word-spacing: 8px;
   font-family: georgia;
 }
 
-/* line 17, ../sass/layout/_header.scss */
+/* line 18, ../sass/layout/_header.scss */
 .site-description {
   font-size: 16px;
   font-size: 1rem;
   margin: 0 0 10px;
 }
 
-/* line 22, ../sass/layout/_header.scss */
+/* line 23, ../sass/layout/_header.scss */
 #page-header {
   width: 100%;
   z-index: 9999;
@@ -866,26 +866,29 @@ a:hover, a:active {
   border-bottom: 1px solid #999;
   transition: all .5s ease;
 }
-/* line 29, ../sass/layout/_header.scss */
+/* line 30, ../sass/layout/_header.scss */
 #page-header.fixed {
   box-shadow: 5px 6px 6px #999;
   -webkit-box-shadow: 5px 6px 6px #999;
   -moz-box-shadow: 5px 6px 6px #999;
 }
 
-/* line 35, ../sass/layout/_header.scss */
+/* line 36, ../sass/layout/_header.scss */
 #masthead {
-  padding: 10px 15px 3px;
+  padding: 10px 5px 3px;
+  margin: 0 auto;
+  max-width: 1280px;
+  position: relative;
 }
 
-/* line 38, ../sass/layout/_header.scss */
+/* line 42, ../sass/layout/_header.scss */
 .site-branding {
   margin-bottom: 1em;
 }
 
 /* line 6, ../sass/layout/_layout.scss */
 #page-inner {
-  max-width: 1024px;
+  max-width: 1280px;
   width: 85%;
   margin: 0 auto;
   background-color: #fff;

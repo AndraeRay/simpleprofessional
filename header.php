@@ -24,11 +24,11 @@
 			<div class="site-branding">
 				<span class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
 				<span class="site-description"><?php bloginfo( 'description' ); ?></span>
-				<span class="header-social">
-					<a href="" target="_blank"><span class="icon github"></span></a>
-					<a href="" target="_blank"><span class="icon linkedin"></span></a>
-				</span>
 			</div><!-- .site-branding -->
+			<span class="header-social">
+				<a href="" target="_blank"><span class="icon github"></span></a>
+				<a href="" target="_blank"><span class="icon linkedin"></span></a>
+			</span>
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php _e( 'Primary Menu', 'simpleprofessional' ); ?></button>

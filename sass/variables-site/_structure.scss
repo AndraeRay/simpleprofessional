@@ -1,4 +1,4 @@
-$size__site-width: 1024px;
+$size__site-width: 1280px;
 
 $size__site-main: 75%;
 $size__site-sidebar: 100% - $size__site-main;
@@ -9,3 +9,5 @@ $mobile-wide-width: 568px;
 $tablet-width: 768px;
 $desktop-width: 1024px;
 $desktop-wide-width: 1200px;
+
+$header-width: $size__site-width;

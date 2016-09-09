@@ -5,11 +5,12 @@
 	a:hover, 
 	a:active {
 		text-decoration: none;
-		letter-spacing: 2px;
+		letter-spacing: 12px;
 		color: $color__logo;
+		word-spacing: 8px;
 		font-family: georgia;
 	}
-	margin: 0 0 .1em .7em;
+	margin: 0 0 .1em 0;
 	@include px-to-rem(34);
 	border-bottom: 1px dotted $color_border-heading;
 }
@@ -33,7 +34,10 @@
 	}
 }
 #masthead {
-	padding: 10px 15px 3px;
+	padding: 10px 5px 3px;
+	margin: 0 auto;
+	max-width: $header-width;
+	position: relative;
 }
 .site-branding {
 	margin-bottom: 1em;

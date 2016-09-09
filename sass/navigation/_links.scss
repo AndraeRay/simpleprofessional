@@ -18,9 +18,8 @@ a {
 	}
 }
 .header-social {
-	width: 40%;
 	position: absolute;
-	right: -20%;
+	right: 0%;
 	top: 8%;
 	@include mobile {
 		display: none;
