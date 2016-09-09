@@ -9,6 +9,9 @@
 		color: $color__logo;
 		word-spacing: 8px;
 		font-family: georgia;
+		@include mobile {
+			letter-spacing: 0px;
+		}
 	}
 	margin: 0 0 .1em 0;
 	@include px-to-rem(34);
@@ -38,6 +41,7 @@
 	margin: 0 auto;
 	max-width: $header-width;
 	position: relative;
+	min-width: 380px;
 }
 .site-branding {
 	margin-bottom: 1em;

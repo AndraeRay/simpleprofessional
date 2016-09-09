@@ -64,6 +64,14 @@
 	.current-menu-item > a,
 	.current_page_ancestor > a {
 	}
+
+	@include mobile {
+		width: auto;
+		right: 0;
+		top: 14px;
+		position: absolute;
+		float: left;
+	}
 }
 
 /* Small menu. */
@@ -71,7 +79,7 @@
 	display: none;
 }
 
-@media screen and (max-width: 600px) {
+@include mobile {
 	.menu-toggle,
 	.main-navigation.toggled .nav-menu {
 		display: block;
