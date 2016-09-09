@@ -26,16 +26,9 @@
   		
   		var maxHeight = 0;
   		
-  		var $children = $(this).find(".equalH-child");
-  		$children.each( function() {
-  			if( $(this).height() > maxHeight ) {
-  				maxHeight = $(this).height();
-  			}
-
-  		});
-  		$children.each( function() {
-  			$(this).height(maxHeight)
-  		});
+  		var $freeChild = $(this).find(".equalH-free")
+  		var $dependentChild = $(this).find(".equalH-dependent")
+  		$dependentChild.height($freeChild.height());
 
   	});
   
