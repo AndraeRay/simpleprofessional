@@ -30,16 +30,18 @@
 .sp-col {
 	&.w25 {
 		img {
-			max-height: 160px;
-			left: 25%;
-			right: 25%;
 			position: relative;
-			top: 25%;
 			height: 100%;
 			vertical-align: middle;
 			max-width: 160px
 		}
 	}
+}
+
+.img-helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 
 .listing-container {

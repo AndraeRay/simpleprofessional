@@ -323,6 +323,11 @@ h1, h2, h3, h4, h5, h6 {
   clear: both;
 }
 
+/* line 5, ../sass/typography/_headings.scss */
+.listing-container h2 {
+  margin: 0;
+}
+
 /* line 1, ../sass/typography/_copy.scss */
 p {
   margin-bottom: 1.5em;
@@ -967,24 +972,27 @@ a:hover, a:active {
 
 /* line 32, ../sass/site/primary/_posts-and-pages.scss */
 .sp-col.w25 img {
-  max-height: 160px;
-  left: 25%;
-  right: 25%;
   position: relative;
-  top: 25%;
   height: 100%;
   vertical-align: middle;
   max-width: 160px;
 }
 
-/* line 45, ../sass/site/primary/_posts-and-pages.scss */
+/* line 41, ../sass/site/primary/_posts-and-pages.scss */
+.img-helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+/* line 47, ../sass/site/primary/_posts-and-pages.scss */
 .listing-container {
   position: relative;
   padding: 10px;
   transition: all .5s ease;
   border: 1px dashed #ccc;
 }
-/* line 49, ../sass/site/primary/_posts-and-pages.scss */
+/* line 51, ../sass/site/primary/_posts-and-pages.scss */
 .listing-container:hover {
   background-color: #f2f2f2;
 }
