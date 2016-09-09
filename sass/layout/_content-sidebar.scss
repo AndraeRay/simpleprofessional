@@ -3,6 +3,10 @@
 	margin: 0 (-$size__site-sidebar) 0 0;
 	width: $size__site-main;
 	padding-right: 20px;
+	@include mobile {
+		margin: 0 0 0 0;
+		width: 100%;
+	}
 }
 
 .site-main {

@@ -23,14 +23,14 @@
 
 		<div class="listing-container equalH-parent">
 		<?php if( !empty($image) ): ?>
-			<section class="sp-col w25 equalH-child"> 
+			<section class="sp-col w25 equalH-dependent"> 
 				<span class="img-helper">
 				<?php if ( !empty($link)) : echo "<a href='$link' target='_blank'>"; endif; ?>
 					<img src="<?php echo $image['url']; ?>" align="middle" alt="<?php echo $image['alt']; ?>" />
 				<?php if ( !empty($link)) : echo "</a>"; endif; ?>
 				</span>
 			</section>
-			<section class="sp-col w75 equalH-child">
+			<section class="sp-col w75 equalH-free">
 		<?php else: ?>
 				<section class="sp-col w100">
 		<?php endif; ?>
