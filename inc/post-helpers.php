@@ -26,7 +26,7 @@ function sp_retrieve_post($post_type, $posts_per_page, $offset) {
 	$query_args = array( 'post_type' => $post_type, 'posts_per_page' => $posts_per_page, 'offset' => $offset );
 	$loop = new WP_Query( $query_args );
 	while ( $loop->have_posts() ) : $loop->the_post();
-	  the_title();
+ 	  the_title( sprintf( '<h3 class="entry-title"><a href="%s">', esc_url( get_permalink() ) ), '</a></h3>' );
 	  echo '<div class="entry-content">';
 	  the_content();
 	  echo '</div>';
