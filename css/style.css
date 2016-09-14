@@ -813,16 +813,18 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 /* line 1, ../sass/site/secondary/_widgets.scss */
 .widget {
-  margin: 0 0 1.5em;
+  margin: 30px 0 0;
+  padding: 30px;
   /* Make sure select elements fit in widgets. */
+  border: 1px solid #d3d3d3;
 }
-/* line 5, ../sass/site/secondary/_widgets.scss */
+/* line 6, ../sass/site/secondary/_widgets.scss */
 .widget select {
   max-width: 100%;
 }
 
 /* Search widget. */
-/* line 11, ../sass/site/secondary/_widgets.scss */
+/* line 14, ../sass/site/secondary/_widgets.scss */
 .widget_search .search-submit {
   display: none;
 }
@@ -833,8 +835,8 @@ a:hover, a:active {
 /* line 1, ../sass/layout/_content-sidebar.scss */
 .content-area {
   float: left;
-  margin: 0 -25% 0 0;
-  width: 75%;
+  margin: 0 -34% 0 0;
+  width: 66%;
   padding-right: 20px;
 }
 @media (min-width: 0) and (max-width: 767px) {
@@ -849,13 +851,13 @@ a:hover, a:active {
 .site-content .widget-area {
   float: right;
   overflow: hidden;
-  width: 25%;
+  width: 34%;
 }
 
 /* line 22, ../sass/layout/_content-sidebar.scss */
 .site-footer {
   clear: both;
-  width: 75%;
+  width: 66%;
 }
 
 /* line 2, ../sass/layout/_header.scss */
@@ -899,7 +901,7 @@ a:hover, a:active {
   z-index: 9999;
   position: fixed;
   background-color: #fff;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #d3d3d3;
   transition: all .5s ease;
 }
 /* line 33, ../sass/layout/_header.scss */
@@ -1040,6 +1042,13 @@ body {
 /* line 51, ../sass/site/primary/_posts-and-pages.scss */
 .listing-container:hover {
   background-color: #f2f2f2;
+}
+
+/* line 58, ../sass/site/primary/_posts-and-pages.scss */
+#main {
+  border: 1px solid #d3d3d3;
+  margin: 30px 26px;
+  padding: 30px;
 }
 
 /*--------------------------------------------------------------
