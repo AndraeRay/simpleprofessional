@@ -10,6 +10,9 @@
 	border: 1px solid $color__border-default;
 	padding: 105px 20px 20px;
 	min-width: 380px;
+	@include mobile {
+		padding: 20px 20px 20px;
+	}
 }
 #page {
 	background-color: $color__background-wrapper;
