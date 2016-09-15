@@ -20,16 +20,26 @@
 
 
 (function($) {
-	var $equalParent = $(".equalH-parent")
-	// console.log("equal par", $equalParent);
-	$equalParent.each(function() {
-  		
-  		var maxHeight = 0;
-  		
-  		var $freeChild = $(this).find(".equalH-free")
-  		var $dependentChild = $(this).find(".equalH-dependent")
-  		$dependentChild.height($freeChild.height());
 
-  	});
+	function adjustColumnHeights(){
+		var $equalParent = $(".equalH-parent")
+		// console.log("equal par", $equalParent);
+		$equalParent.each(function() {
+	  		
+	  		var maxHeight = 0;
+	  		
+	  		var $freeChild = $(this).find(".equalH-free")
+	  		var $dependentChild = $(this).find(".equalH-dependent")
+	  		$dependentChild.height($freeChild.height());
+
+	  	});	
+	}
+
+	adjustColumnHeights();
+	
+	$(window).resize(function() {
+		adjustColumnHeights();
+	});
+	
   
 }(jQuery));
