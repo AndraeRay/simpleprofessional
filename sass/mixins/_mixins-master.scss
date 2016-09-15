@@ -53,6 +53,12 @@
 	}
 }
 
+@mixin non-desktop {
+	@media (min-width: 0) and (max-width: #{$desktop-width - 1px}) {
+		@content;
+	}
+}
+
 @mixin desktop {
 	@media (min-width: #{$desktop-width}) {
 		@content;

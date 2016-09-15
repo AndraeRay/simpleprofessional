@@ -479,6 +479,7 @@ img {
   /* Make sure images are scaled correctly. */
   max-width: 100%;
   /* Adhere to container width. */
+  width: 100%;
 }
 
 /* line 1, ../sass/elements/_tables.scss */
@@ -844,13 +845,20 @@ a:hover, a:active {
   /* Make sure select elements fit in widgets. */
   border: 1px solid #d3d3d3;
 }
-/* line 6, ../sass/site/secondary/_widgets.scss */
+@media (min-width: 0) and (max-width: 1023px) {
+  /* line 1, ../sass/site/secondary/_widgets.scss */
+  .widget {
+    margin: 30px 0 0 0;
+    padding: 20px;
+  }
+}
+/* line 10, ../sass/site/secondary/_widgets.scss */
 .widget select {
   max-width: 100%;
 }
 
 /* Search widget. */
-/* line 14, ../sass/site/secondary/_widgets.scss */
+/* line 18, ../sass/site/secondary/_widgets.scss */
 .widget_search .search-submit {
   display: none;
 }
@@ -974,6 +982,8 @@ a:hover, a:active {
   float: left;
   margin-right: 15px;
   border-radius: 50%;
+  width: 100px;
+  height: 100px;
 }
 
 /* line 6, ../sass/layout/_layout.scss */
@@ -999,38 +1009,39 @@ a:hover, a:active {
 /* line 19, ../sass/layout/_layout.scss */
 .sp-col {
   float: left;
+  padding: 0 .5%;
 }
-/* line 21, ../sass/layout/_layout.scss */
+/* line 22, ../sass/layout/_layout.scss */
 .sp-col.w25 {
   width: 24.9999%;
 }
-/* line 24, ../sass/layout/_layout.scss */
+/* line 25, ../sass/layout/_layout.scss */
 .sp-col.w33 {
   width: 33.32222%;
 }
-/* line 27, ../sass/layout/_layout.scss */
+/* line 28, ../sass/layout/_layout.scss */
 .sp-col.w50 {
   width: 49.9999%;
 }
-/* line 30, ../sass/layout/_layout.scss */
+/* line 31, ../sass/layout/_layout.scss */
 .sp-col.w66 {
   width: 66.6555%;
 }
-/* line 33, ../sass/layout/_layout.scss */
+/* line 34, ../sass/layout/_layout.scss */
 .sp-col.w75 {
   width: 74.9999%;
 }
-/* line 36, ../sass/layout/_layout.scss */
+/* line 37, ../sass/layout/_layout.scss */
 .sp-col.w100 {
   width: 100%;
 }
 
-/* line 40, ../sass/layout/_layout.scss */
+/* line 41, ../sass/layout/_layout.scss */
 .clear-fix {
   clear: both;
 }
 
-/* line 44, ../sass/layout/_layout.scss */
+/* line 45, ../sass/layout/_layout.scss */
 body {
   min-width: 380px;
 }
@@ -1105,6 +1116,13 @@ body {
   border: 1px solid #d3d3d3;
   margin: 30px 3%;
   padding: 30px;
+}
+@media (min-width: 0) and (max-width: 1023px) {
+  /* line 58, ../sass/site/primary/_posts-and-pages.scss */
+  #main {
+    margin: 30px 0;
+    padding: 20px;
+  }
 }
 
 /*--------------------------------------------------------------
