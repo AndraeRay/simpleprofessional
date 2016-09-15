@@ -35,6 +35,12 @@
 	}
 }
 
+@mixin mobile-narrow {
+	@media (min-width: 0) and (max-width: #{$mobile-wide-width - 1px}) {
+		@content;
+	}
+}
+
 @mixin non-mobile {
 	@media (min-width: #{$tablet-width}) {
 		@content;

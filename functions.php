@@ -177,7 +177,7 @@ require  get_template_directory() . '/inc/widget_random_testimonial.php';
 function simpleprofessional_add_logo(){
 	$args = array(
 		'width'         => 100,
-		'height'        => 60,
+		'height'        => 100,
 		'default-image' => get_template_directory_uri() . '/images/header.jpg',
 		'uploads'       => true,
 	);

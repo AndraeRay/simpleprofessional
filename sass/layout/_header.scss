@@ -15,9 +15,10 @@
 	margin: 0 0 .1em 0;
 	@include px-to-rem(34);
 	position: relative;
-	top: 10px;
-	@include mobile {
+	top: 25px;
+	@include mobile-narrow {
 		margin: 0 40px .1em 0;
+		top: 0px;
 	}
 }
 
@@ -48,7 +49,7 @@
 	}
 }
 #masthead {
-	padding: 10px 5% 3px;
+	padding: 5px 5% 3px;
 	margin: 0 auto;
 	max-width: $header-width;
 	position: relative;
