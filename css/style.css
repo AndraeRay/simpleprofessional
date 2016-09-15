@@ -328,12 +328,19 @@ textarea {
   src: url(../fonts/poppins/Poppins-Bold.ttf);
   font-weight: normal;
 }
+@font-face {
+  font-family: poppins-med;
+  src: url(../fonts/poppins/Poppins-Medium.ttf);
+  font-weight: normal;
+}
 /* line 1, ../sass/typography/_headings.scss */
 h1, h2, h3, h4, h5, h6 {
   clear: both;
+  font-weight: normal;
+  font-family: poppins-med;
 }
 
-/* line 5, ../sass/typography/_headings.scss */
+/* line 7, ../sass/typography/_headings.scss */
 .listing-container h2 {
   margin: 0;
 }
