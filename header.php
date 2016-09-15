@@ -22,8 +22,10 @@
 	<div id="page-header">
 		<header id="masthead" class="site-header" role="banner">
 			<div class="site-branding">
+				<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
 				<span class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
 				<span class="site-description"><?php bloginfo( 'description' ); ?></span>
+				<div class="clear-fix"></div>
 			</div><!-- .site-branding -->
 			<span class="header-social">
 				<a href="" target="_blank"><span class="icon github"></span></a>

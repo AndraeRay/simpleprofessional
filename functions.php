@@ -170,3 +170,18 @@ require get_template_directory() . '/inc/post-helpers.php';
  */
 require  get_template_directory() . '/inc/widget_random_testimonial.php';
 
+/**
+*
+*/
+
+function simpleprofessional_add_logo(){
+	$args = array(
+		'width'         => 100,
+		'height'        => 60,
+		'default-image' => get_template_directory_uri() . '/images/header.jpg',
+		'uploads'       => true,
+	);
+	add_theme_support( 'custom-header', $args );
+}
+
+add_action( 'after_setup_theme', 'simpleprofessional_add_logo' );
