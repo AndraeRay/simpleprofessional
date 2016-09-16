@@ -28,20 +28,26 @@
 }
 
 .sp-col {
+	display: table;
 	&.w25 {
 		img {
 			position: relative;
-			height: 100%;
+			height: auto;
+			width: 100%;
 			vertical-align: middle;
-			max-width: 160px
+			max-width: 160px;
+			max-height: 100%;
 		}
 	}
 }
 
 .img-helper {
-    display: inline-block;
+    display: table-cell;
     height: 100%;
     vertical-align: middle;
+    @include mobile-narrow {
+    	text-align: center;
+    }
 }
 
 .listing-container {

@@ -6,6 +6,7 @@
 	@include mobile {
 		margin: 0 0 0 0;
 		width: 100%;
+		padding-right: 0px;
 	}
 }
 
@@ -17,6 +18,9 @@
 	float: right;
 	overflow: hidden;
 	width: $size__site-sidebar;
+	@include mobile {
+		width: 100%;
+	}
 }
 
 .site-footer {

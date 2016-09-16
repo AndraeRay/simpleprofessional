@@ -10,7 +10,7 @@
 	padding: 105px 20px 20px;
 	min-width: 380px;
 	@include mobile {
-		padding: 20px 20px 20px;
+		padding: 10px
 	}
 }
 #page {
@@ -21,21 +21,39 @@
 	padding: 0 .5%;
 	&.w25{
 		width: 24.9999%;
+		@include mobile-narrow {
+			width: 100%;
+		}
 	}
 	&.w33{
 		width: 33.32222%;
+		@include mobile-narrow {
+			width: 100%;
+		}
 	}
 	&.w50 {
 		width: 49.9999%;
+		@include mobile-narrow {
+			width: 100%;
+		}
 	}
 	&.w66 {
 		width: 66.6555%;
+		@include mobile-narrow {
+			width: 100%;
+		}
 	}
 	&.w75 {
 		width: 74.9999%;
+		@include mobile-narrow {
+			width: 100%;
+		}
 	}
 	&.w100{
 		width: 100%;
+	}
+	@include mobile-narrow {
+		float: none;
 	}
 }
 .clear-fix{
