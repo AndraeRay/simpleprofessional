@@ -724,7 +724,7 @@ a:hover, a:active {
   /* line 95, ../sass/navigation/_menus.scss */
   .main-navigation ul {
     display: none;
-    line-height: 1.5;
+    line-height: 2;
   }
 }
 /* line 105, ../sass/navigation/_menus.scss */
