@@ -724,23 +724,24 @@ a:hover, a:active {
   /* line 95, ../sass/navigation/_menus.scss */
   .main-navigation ul {
     display: none;
+    line-height: 1.5;
   }
 }
-/* line 104, ../sass/navigation/_menus.scss */
+/* line 105, ../sass/navigation/_menus.scss */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-/* line 109, ../sass/navigation/_menus.scss */
+/* line 110, ../sass/navigation/_menus.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-/* line 114, ../sass/navigation/_menus.scss */
+/* line 115, ../sass/navigation/_menus.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -979,14 +980,13 @@ a:hover, a:active {
   margin: 0 auto;
   max-width: 1280px;
   position: relative;
-  min-width: 380px;
 }
 
-/* line 58, ../sass/layout/_header.scss */
+/* line 57, ../sass/layout/_header.scss */
 .site-branding {
   position: relative;
 }
-/* line 60, ../sass/layout/_header.scss */
+/* line 59, ../sass/layout/_header.scss */
 .site-branding img {
   float: left;
   margin-right: 15px;
@@ -1001,7 +1001,7 @@ a:hover, a:active {
   margin: 0 auto;
   background-color: #fff;
   padding: 105px 20px 20px;
-  min-width: 380px;
+  min-width: 320px;
 }
 @media (min-width: 0) and (max-width: 767px) {
   /* line 6, ../sass/layout/_layout.scss */
@@ -1088,7 +1088,7 @@ a:hover, a:active {
 
 /* line 63, ../sass/layout/_layout.scss */
 body {
-  min-width: 380px;
+  min-width: 320px;
 }
 
 /*--------------------------------------------------------------

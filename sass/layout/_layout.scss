@@ -8,7 +8,7 @@
 	margin: 0 auto;
 	background-color: $color__background-body;
 	padding: 105px 20px 20px;
-	min-width: 380px;
+	min-width: $size__site-min-width;
 	@include mobile {
 		padding: 10px
 	}
@@ -61,5 +61,5 @@
 }
 
 body {
-	min-width: 380px;
+	min-width: $size__site-min-width;
 }
