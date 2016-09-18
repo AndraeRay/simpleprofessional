@@ -865,9 +865,13 @@ a:hover, a:active {
   margin: 0 auto;
   float: none;
 }
+/* line 21, ../sass/site/secondary/_widgets.scss */
+.widget .crayon-syntax {
+  display: none;
+}
 
 /* Search widget. */
-/* line 24, ../sass/site/secondary/_widgets.scss */
+/* line 27, ../sass/site/secondary/_widgets.scss */
 .widget_search .search-submit {
   display: none;
 }
