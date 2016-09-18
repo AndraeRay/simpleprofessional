@@ -28,8 +28,8 @@
 				<div class="clear-fix"></div>
 			</div><!-- .site-branding -->
 			<span class="header-social">
-				<a href="" target="_blank"><span class="icon github"></span></a>
-				<a href="" target="_blank"><span class="icon linkedin"></span></a>
+				<a href="<?php echo get_option('github_url') ?>" target="_blank"><span class="icon github"></span></a>
+				<a href="<?php echo get_option('linkedin_url') ?>" target="_blank"><span class="icon linkedin"></span></a>
 			</span>
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
