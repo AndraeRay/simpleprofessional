@@ -2,11 +2,11 @@
 
 	var header = document.getElementById("page-header");
 	
-	function toggleHeaderShadow() {
+	function toggleFixedHeader() {
 
 		var pageBodyScroll = (document.body.scrollTop || document.documentElement.scrollTop )
 		
-		if ( pageBodyScroll > 50 ){			
+		if ( pageBodyScroll > 100 ){			
 			header.className = "fixed";
 		} else {
 			header.className = "";
@@ -14,7 +14,7 @@
 	}
 
 	 window.onscroll = function() {
-	 	toggleHeaderShadow()
+	 	toggleFixedHeader()
 	 };
 })();
 

@@ -845,8 +845,8 @@ a:hover, a:active {
 .widget {
   margin: 30px 5% 0 0;
   padding: 30px;
-  /* Make sure select elements fit in widgets. */
   border: 1px solid #d3d3d3;
+  /* Make sure select elements fit in widgets. */
 }
 @media (min-width: 0) and (max-width: 1023px) {
   /* line 1, ../sass/site/secondary/_widgets.scss */
@@ -859,9 +859,15 @@ a:hover, a:active {
 .widget select {
   max-width: 100%;
 }
+/* line 14, ../sass/site/secondary/_widgets.scss */
+.widget img.alignleft, .widget img.alignRight {
+  display: block;
+  margin: 0 auto;
+  float: none;
+}
 
 /* Search widget. */
-/* line 18, ../sass/site/secondary/_widgets.scss */
+/* line 24, ../sass/site/secondary/_widgets.scss */
 .widget_search .search-submit {
   display: none;
 }
@@ -950,31 +956,34 @@ a:hover, a:active {
 #page-header {
   width: 100%;
   z-index: 9999;
-  position: fixed;
   background-color: #fff;
   border-bottom: 1px solid #d3d3d3;
   transition: all .5s ease;
 }
-/* line 37, ../sass/layout/_header.scss */
-#page-header.fixed {
-  box-shadow: 5px 6px 6px #999;
-  -webkit-box-shadow: 5px 6px 6px #999;
-  -moz-box-shadow: 5px 6px 6px #999;
-}
-@media (min-width: 0) and (max-width: 767px) {
-  /* line 30, ../sass/layout/_header.scss */
-  #page-header {
-    position: relative;
-  }
-  /* line 44, ../sass/layout/_header.scss */
+@media (min-width: 768px) {
+  /* line 36, ../sass/layout/_header.scss */
   #page-header.fixed {
-    box-shadow: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
+    position: fixed;
+    box-shadow: 5px 6px 6px #999;
+    -webkit-box-shadow: 5px 6px 6px #999;
+    -moz-box-shadow: 5px 6px 6px #999;
+  }
+  /* line 42, ../sass/layout/_header.scss */
+  #page-header.fixed .site-title {
+    top: 0;
+  }
+  /* line 45, ../sass/layout/_header.scss */
+  #page-header.fixed .site-branding img {
+    display: none;
+  }
+  /* line 48, ../sass/layout/_header.scss */
+  #page-header.fixed + #page-inner {
+    padding-top: 110px;
+    transition: all 0;
   }
 }
 
-/* line 51, ../sass/layout/_header.scss */
+/* line 55, ../sass/layout/_header.scss */
 #masthead {
   padding: 5px 5% 3px;
   margin: 0 auto;
@@ -982,11 +991,11 @@ a:hover, a:active {
   position: relative;
 }
 
-/* line 57, ../sass/layout/_header.scss */
+/* line 61, ../sass/layout/_header.scss */
 .site-branding {
   position: relative;
 }
-/* line 59, ../sass/layout/_header.scss */
+/* line 63, ../sass/layout/_header.scss */
 .site-branding img {
   float: left;
   margin-right: 15px;
@@ -1000,7 +1009,7 @@ a:hover, a:active {
   max-width: 1280px;
   margin: 0 auto;
   background-color: #fff;
-  padding: 105px 20px 20px;
+  padding: 10px 20px 20px;
   min-width: 320px;
 }
 @media (min-width: 0) and (max-width: 767px) {
