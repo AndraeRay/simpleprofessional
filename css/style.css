@@ -844,7 +844,7 @@ a:hover, a:active {
 /* line 1, ../sass/site/secondary/_widgets.scss */
 .widget {
   margin: 30px 5% 0 0;
-  padding: 30px;
+  padding: 0 30px 5px;
   border: 1px solid #d3d3d3;
   /* Make sure select elements fit in widgets. */
 }
@@ -1129,7 +1129,7 @@ body {
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 1.5em 0 0;
+  margin: .8em 0 0;
 }
 
 /* line 25, ../sass/site/primary/_posts-and-pages.scss */
@@ -1181,7 +1181,7 @@ body {
 #main {
   border: 1px solid #d3d3d3;
   margin: 30px 3%;
-  padding: 30px;
+  padding: 0 30px 5px;
 }
 @media (min-width: 0) and (max-width: 1023px) {
   /* line 64, ../sass/site/primary/_posts-and-pages.scss */
@@ -1189,6 +1189,17 @@ body {
     margin: 30px 0;
     padding: 20px;
   }
+}
+
+/* line 74, ../sass/site/primary/_posts-and-pages.scss */
+.posted-on {
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+
+/* line 78, ../sass/site/primary/_posts-and-pages.scss */
+.entry-title {
+  margin: 10px 0 5px;
 }
 
 /*--------------------------------------------------------------
