@@ -90,6 +90,11 @@
 		display: block;
 		border: 1px solid $color__border-light;
 		background-color: #fff;
+		float: right;
+	}
+
+	#primary-menu{
+		margin-top: 50px;
 	}
 
 	.main-navigation ul {

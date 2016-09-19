@@ -719,29 +719,35 @@ a:hover, a:active {
     display: block;
     border: 1px solid #d3d3d3;
     background-color: #fff;
+    float: right;
   }
 
-  /* line 95, ../sass/navigation/_menus.scss */
+  /* line 96, ../sass/navigation/_menus.scss */
+  #primary-menu {
+    margin-top: 50px;
+  }
+
+  /* line 100, ../sass/navigation/_menus.scss */
   .main-navigation ul {
     display: none;
     line-height: 2;
   }
 }
-/* line 105, ../sass/navigation/_menus.scss */
+/* line 110, ../sass/navigation/_menus.scss */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-/* line 110, ../sass/navigation/_menus.scss */
+/* line 115, ../sass/navigation/_menus.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-/* line 115, ../sass/navigation/_menus.scss */
+/* line 120, ../sass/navigation/_menus.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
