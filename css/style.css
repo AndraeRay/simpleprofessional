@@ -318,6 +318,12 @@ textarea {
   line-height: 1.5;
 }
 
+/* line 12, ../sass/typography/_typography.scss */
+#content {
+  font-size: 16px;
+  font-size: 1rem;
+}
+
 @font-face {
   font-family: poppins-light;
   src: url(../fonts/poppins/Poppins-Light.ttf);
@@ -344,6 +350,12 @@ h1, h2, h3, h4, h5, h6 {
 .listing-container h2 {
   margin: 0;
   text-align: center;
+}
+
+/* line 12, ../sass/typography/_headings.scss */
+h1 {
+  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 /* line 1, ../sass/typography/_copy.scss */
@@ -584,12 +596,12 @@ textarea {
 --------------------------------------------------------------*/
 /* line 1, ../sass/navigation/_links.scss */
 a {
-  color: #002266;
+  color: #0066cc;
   text-decoration: none;
 }
 /* line 5, ../sass/navigation/_links.scss */
 a:visited {
-  color: #002266;
+  color: #0066cc;
 }
 /* line 8, ../sass/navigation/_links.scss */
 a:hover, a:focus, a:active {
@@ -988,7 +1000,7 @@ a:hover, a:active {
   }
   /* line 48, ../sass/layout/_header.scss */
   #page-header.fixed + #page-inner {
-    padding-top: 110px;
+    padding-top: 135px;
     transition: all 0;
   }
 }
@@ -1012,6 +1024,11 @@ a:hover, a:active {
   border-radius: 50%;
   width: 100px;
   height: 100px;
+}
+
+/* line 1, ../sass/layout/_footer.scss */
+.site-footer {
+  margin: 40px auto 0;
 }
 
 /* line 6, ../sass/layout/_layout.scss */

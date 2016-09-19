@@ -9,6 +9,10 @@ textarea {
 	line-height: $font__line-height-body;
 }
 
+#content {
+	@include font-size(1);
+}
+
 @import "fonts";
 
 @import "headings";
