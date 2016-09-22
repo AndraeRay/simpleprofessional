@@ -877,19 +877,19 @@ a:hover, a:active {
 .widget select {
   max-width: 100%;
 }
-/* line 14, ../sass/site/secondary/_widgets.scss */
-.widget img.alignleft, .widget img.alignRight {
+/* line 13, ../sass/site/secondary/_widgets.scss */
+.widget img {
   display: block;
   margin: 0 auto;
   float: none;
 }
-/* line 21, ../sass/site/secondary/_widgets.scss */
+/* line 18, ../sass/site/secondary/_widgets.scss */
 .widget .crayon-syntax {
   display: none;
 }
 
 /* Search widget. */
-/* line 27, ../sass/site/secondary/_widgets.scss */
+/* line 24, ../sass/site/secondary/_widgets.scss */
 .widget_search .search-submit {
   display: none;
 }
@@ -1249,6 +1249,16 @@ body {
 /* line 4, ../sass/site/primary/_comments.scss */
 .bypostauthor {
   display: block;
+}
+
+/* line 9, ../sass/site/primary/_comments.scss */
+#comments ol {
+  margin: 1em 0 1em 0;
+  padding: 0 0 1em 0.5em;
+}
+/* line 12, ../sass/site/primary/_comments.scss */
+#comments ol ol {
+  margin: 0 0 1em 2.5em;
 }
 
 /*--------------------------------------------------------------

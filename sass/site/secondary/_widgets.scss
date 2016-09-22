@@ -11,12 +11,9 @@
 		max-width: 100%;
 	}
 	img {
-		&.alignleft,
-		&.alignRight {
 			display: block;
 			margin: 0 auto;
 			float: none;
-		}
 	}
 	.crayon-syntax {
 		display: none;

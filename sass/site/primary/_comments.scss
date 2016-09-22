@@ -4,3 +4,13 @@
 .bypostauthor {
 	display: block;
 }
+
+#comments {
+	ol {
+		margin: 1em 0 1em 0;
+		padding: 0 0 1em 0.5em;
+		ol {
+			margin: 0 0 1em 2.5em;
+		}
+	}
+}
