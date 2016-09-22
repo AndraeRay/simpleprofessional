@@ -22,6 +22,7 @@
 (function($) {
 
 	function adjustColumnHeights(){
+
 		var $equalParent = $(".equalH-parent")
 		// console.log("equal par", $equalParent);
 		$equalParent.each(function() {
@@ -30,7 +31,11 @@
 	  		
 	  		var $freeChild = $(this).find(".equalH-free")
 	  		var $dependentChild = $(this).find(".equalH-dependent")
-	  		$dependentChild.height($freeChild.height());
+	  		if ($(window).width() < 567){
+	  			$dependentChild.height("auto");	
+	  		} else {
+	  			$dependentChild.height($freeChild.height());
+	  		}
 
 	  	});	
 	}
