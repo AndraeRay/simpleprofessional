@@ -17,6 +17,8 @@
 
 		$image = get_field('image');
 		$link = get_field('link');
+		$custom_field=get_field('key1');
+		$custom_value = get_field('value1');
 
 		?>
 
@@ -38,7 +40,7 @@
 					<h2><?php the_title(); ?></h2>
 					<?php if ( !empty($link)) : echo "</a>"; endif; ?>
 					<span><?php the_content(); ?></span>
-					<span class="additional"> Technologies used </span>
+					<span class="custom-field"> <?php echo $custom_field?>: <span class="custom-value"><?php echo $custom_value?></span> </span>
 				 </section>
 				 <div class="clear-fix"></div>
 			</div>
