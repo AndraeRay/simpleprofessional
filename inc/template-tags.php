@@ -102,7 +102,7 @@ function simpleprofessional_entry_footer() {
 		/* translators: used between list items, there is a space after the comma */
 		$categories_list = get_the_category_list( __( ', ', 'simpleprofessional' ) );
 		if ( $categories_list && simpleprofessional_categorized_blog() ) {
-			printf( '<span class="cat-links">' . __( 'Posted in %1$s', 'simpleprofessional' ) . '</span>', $categories_list );
+			//printf( '<span class="cat-links">' . __( 'Posted in %1$s', 'simpleprofessional' ) . '</span>', $categories_list );
 		}
 
 		/* translators: used between list items, there is a space after the comma */
