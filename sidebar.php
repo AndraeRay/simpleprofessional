@@ -14,7 +14,11 @@ $NO_SIDEBAR_ID=99;
 	if ( !is_active_sidebar($sidebar) || $sidebar === $NO_SIDEBAR_ID ) {
 		simpleprofessional_load_no_sidebar_styles();
 		return;
-	};
+	} elseif (get_option('sidebar-position', 'left') == 'left') {
+		simpleprofessional_load_left_sidebar_styles();
+	} else {
+		simpleprofessional_load_right_sidebar_styles();
+	}
 
 ?>
 

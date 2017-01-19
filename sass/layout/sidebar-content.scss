@@ -1,17 +1,29 @@
+@import "../mixins/mixins-master";
+@import "../variables-site/variables-site";
+
 .content-area {
 	float: right;
 	margin: 0 0 0 (-$size__site-sidebar);
 	width: $size__site-main;
+	padding-left: 20px;
+	@include mobile {
+		margin: 0 0 0 0;
+		width: 100%;
+		padding-left: 0px;
+	}
 }
 
 .site-main {
-	margin: 0 0 0 $size__site-sidebar;
+	//margin: 0 0 0 $size__site-sidebar;
 }
 
 .site-content .widget-area {
 	float: left;
 	overflow: hidden;
 	width: $size__site-sidebar;
+	@include mobile {
+		width: 100%;
+	}
 }
 
 .site-footer {

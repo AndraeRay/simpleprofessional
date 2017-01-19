@@ -110,6 +110,14 @@ function simpleprofessional_load_no_sidebar_styles() {
 	wp_enqueue_style( 'content-nosidebar', get_template_directory_uri() . '/layouts/content-nosidebar.css', false, '1.1', 'all' );
 }
 
+function simpleprofessional_load_left_sidebar_styles() {
+	wp_enqueue_style( 'sidebar-content', get_template_directory_uri() . '/css/layout/sidebar-content.css', false, '1.1', 'all' );
+}
+
+function simpleprofessional_load_right_sidebar_styles() {
+	wp_enqueue_style( 'content-sidebar', get_template_directory_uri() . '/css/layout/content-sidebar.css', false, '1.1', 'all' );
+}
+
 /**
  * Enqueue scripts and styles.
  */

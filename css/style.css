@@ -897,41 +897,6 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-/* line 1, ../sass/layout/_content-sidebar.scss */
-.content-area {
-  float: left;
-  margin: 0 -34% 0 0;
-  width: 66%;
-  padding-right: 20px;
-}
-@media (min-width: 0) and (max-width: 767px) {
-  /* line 1, ../sass/layout/_content-sidebar.scss */
-  .content-area {
-    margin: 0 0 0 0;
-    width: 100%;
-    padding-right: 0px;
-  }
-}
-
-/* line 17, ../sass/layout/_content-sidebar.scss */
-.site-content .widget-area {
-  float: right;
-  overflow: hidden;
-  width: 34%;
-}
-@media (min-width: 0) and (max-width: 767px) {
-  /* line 17, ../sass/layout/_content-sidebar.scss */
-  .site-content .widget-area {
-    width: 100%;
-  }
-}
-
-/* line 26, ../sass/layout/_content-sidebar.scss */
-.site-footer {
-  clear: both;
-  width: 66%;
-}
-
 /* line 2, ../sass/layout/_header.scss */
 .site-title {
   margin: 0 0 .1em 0;

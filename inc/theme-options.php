@@ -39,15 +39,26 @@ function display_github_element()
     <?php
 }
 
+function display_sidebar_position_element()
+{
+	$options['sidebar-position'] = get_option('sidebar-position', 'left')
+	?>
+    	<input type="radio" name="sidebar-position" id="sidebar-position" value="left" <?php checked( $options['sidebar-position'], 'left' ); ?>> Left Side
+    	<input type="radio" name="sidebar-position" id="sidebar-position" value="right" <?php checked( $options['sidebar-position'], 'right' ); ?>> Right Side
+    <?php
+}
+
 function display_theme_panel_fields()
 {
 	add_settings_section("section", "All Settings", null, "theme-options");
 	
 	add_settings_field("linkedin_url", "LinkedIn Profile Url", "display_linkedin_element", "theme-options", "section");
     add_settings_field("github_url", "GitHub Profile Url", "display_github_element", "theme-options", "section");
+    add_settings_field("sidebar-position", "Sidebar position", "display_sidebar_position_element", "theme-options", "section");
 
     register_setting("section", "linkedin_url");
     register_setting("section", "github_url");
+    register_setting("section", "sidebar-position");
 }
 
 add_action("admin_init", "display_theme_panel_fields");
