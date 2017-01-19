@@ -27,11 +27,18 @@
 				<span class="site-description"><?php bloginfo( 'description' ); ?></span>
 				<div class="clear-fix"></div>
 			</div><!-- .site-branding -->
-			<span class="header-social">
-				<a href="<?php echo get_option('github_url') ?>" target="_blank"><span class="icon github"></span></a>
-				<a href="<?php echo get_option('linkedin_url') ?>" target="_blank"><span class="icon linkedin"></span></a>
-			</span>
 
+			<?php $github_url = get_option('github_url'); $linkedin_url = get_option('linkedin_url') ?>
+			<?php if ( !$github_url || !$linkedin_url ) : ?>
+				<span class="header-social">
+					<?php if ($github_url) : ?>
+						<a href="<?php echo $github_url ?>" target="_blank"><span class="icon github"></span></a>
+					<?php endif ?>
+					<?php if ($linkedin_url) : ?>
+						<a href="<?php echo $linkedin_url ?>" target="_blank"><span class="icon linkedin"></span></a>
+					<?php endif ?>
+				</span>
+			<?php endif; ?>
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php _e( '', 'simpleprofessional' ); ?></button>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
