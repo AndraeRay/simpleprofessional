@@ -30,7 +30,7 @@
 #page-header {
 	width: 100%;
 	z-index: 9999;
-	background-color: $color__background-body;
+	background-color: $color__background-header;
 	border-bottom: 1px solid $color__border-light;
 	transition: all .5s ease;
 	&.fixed {

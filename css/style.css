@@ -433,7 +433,7 @@ html {
 
 /* line 11, ../sass/elements/_elements.scss */
 body {
-  background: #fff;
+  background: #ffffff;
   /* Fallback for when there is no custom background color defined. */
 }
 
@@ -864,6 +864,7 @@ a:hover, a:active {
   margin: 30px 5% 0 0;
   padding: 0 30px 5px;
   border: 1px solid #d3d3d3;
+  background-color: #ffffff;
   /* Make sure select elements fit in widgets. */
 }
 @media (min-width: 0) and (max-width: 1023px) {
@@ -873,23 +874,23 @@ a:hover, a:active {
     padding: 20px;
   }
 }
-/* line 10, ../sass/site/secondary/_widgets.scss */
+/* line 11, ../sass/site/secondary/_widgets.scss */
 .widget select {
   max-width: 100%;
 }
-/* line 13, ../sass/site/secondary/_widgets.scss */
+/* line 14, ../sass/site/secondary/_widgets.scss */
 .widget img {
   display: block;
   margin: 0 auto;
   float: none;
 }
-/* line 18, ../sass/site/secondary/_widgets.scss */
+/* line 19, ../sass/site/secondary/_widgets.scss */
 .widget .crayon-syntax {
   display: none;
 }
 
 /* Search widget. */
-/* line 24, ../sass/site/secondary/_widgets.scss */
+/* line 25, ../sass/site/secondary/_widgets.scss */
 .widget_search .search-submit {
   display: none;
 }
@@ -943,7 +944,7 @@ a:hover, a:active {
 #page-header {
   width: 100%;
   z-index: 9999;
-  background-color: #fff;
+  background-color: #ffffff;
   border-bottom: 1px solid #d3d3d3;
   transition: all .5s ease;
 }
@@ -1000,7 +1001,7 @@ a:hover, a:active {
 #page-inner {
   max-width: 1280px;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 10px 20px 20px;
   min-width: 320px;
 }
@@ -1013,7 +1014,7 @@ a:hover, a:active {
 
 /* line 16, ../sass/layout/_layout.scss */
 #page {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 /* line 19, ../sass/layout/_layout.scss */
@@ -1174,6 +1175,7 @@ body {
   border: 1px solid #d3d3d3;
   margin: 30px 3%;
   padding: 0 30px 5px;
+  background-color: #ffffff;
 }
 @media (min-width: 0) and (max-width: 1023px) {
   /* line 64, ../sass/site/primary/_posts-and-pages.scss */
@@ -1183,13 +1185,13 @@ body {
   }
 }
 
-/* line 74, ../sass/site/primary/_posts-and-pages.scss */
+/* line 75, ../sass/site/primary/_posts-and-pages.scss */
 .posted-on {
   font-size: 14px;
   font-size: 0.875rem;
 }
 
-/* line 78, ../sass/site/primary/_posts-and-pages.scss */
+/* line 79, ../sass/site/primary/_posts-and-pages.scss */
 .entry-title {
   margin: 10px 0 5px;
 }
