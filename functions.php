@@ -208,4 +208,3 @@ require get_template_directory() . '/inc/theme-logo.php';
 */
 
 require get_template_directory() . '/inc/theme-options.php';
-
