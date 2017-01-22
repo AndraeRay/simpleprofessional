@@ -28,14 +28,19 @@
 				<div class="clear-fix"></div>
 			</div><!-- .site-branding -->
 
-			<?php $github_url = get_option('github_url'); $linkedin_url = get_option('linkedin_url') ?>
-			<?php if ( !$github_url || !$linkedin_url ) : ?>
+			<?php $github_url = get_option('github_url'); 
+			$linkedin_url = get_option('linkedin_url');
+			$phone_number = get_option('phone_number'); ?>
+			<?php if ( $github_url || $linkedin_url || $phone_number ) : ?>
 				<span class="header-social">
 					<?php if ($github_url) : ?>
 						<a href="<?php echo $github_url ?>" target="_blank"><span class="icon github"></span></a>
 					<?php endif ?>
 					<?php if ($linkedin_url) : ?>
 						<a href="<?php echo $linkedin_url ?>" target="_blank"><span class="icon linkedin"></span></a>
+					<?php endif ?>
+					<?php if ($phone_number) : ?>
+						<a href="tel:+<?php echo $phone_number ?>"<span class="phone_number"><?php echo $phone_number ?></span></a>
 					<?php endif ?>
 				</span>
 			<?php endif; ?>

@@ -33,8 +33,12 @@ a {
 		}
 		&.github{
 			background: $sprite-url no-repeat sprite-position($icons, github);
-			padding: 3px 41px;
+			padding: 0px 41px;
 
 		}
+	}
+	.phone_number{
+		text-decoration: none;
+		font-size: 28px;
 	}
 }

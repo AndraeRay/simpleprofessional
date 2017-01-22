@@ -640,7 +640,12 @@ a:hover, a:active {
 /* line 34, ../sass/navigation/_links.scss */
 .header-social .icon.github {
   background: url('../images/sprite-s49f19063f3.png') no-repeat 0 0;
-  padding: 3px 41px;
+  padding: 0px 41px;
+}
+/* line 40, ../sass/navigation/_links.scss */
+.header-social .phone_number {
+  text-decoration: none;
+  font-size: 28px;
 }
 
 /*--------------------------------------------------------------

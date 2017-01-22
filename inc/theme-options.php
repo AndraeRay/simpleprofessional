@@ -28,14 +28,21 @@ add_action("admin_menu", "add_theme_menu_item");
 
 function display_linkedin_element() {
 	?>
-    	<input type="text" name="linkedin_url" id="linkedin_url" value="<?php echo get_option('linkedin_url'); ?>" />
+    	<input type="url" name="linkedin_url" id="linkedin_url" value="<?php echo get_option('linkedin_url'); ?>" />
     <?php
 }
 
 function display_github_element()
 {
 	?>
-    	<input type="text" name="github_url" id="github_url" value="<?php echo get_option('github_url'); ?>" />
+    	<input type="url" name="github_url" id="github_url" value="<?php echo get_option('github_url'); ?>" />
+    <?php
+}
+
+function display_phone_element()
+{
+	?>
+    	<input type="tel" name="phone_number" id="phone_number" value="<?php echo get_option('phone_number'); ?>" />
     <?php
 }
 
@@ -54,10 +61,12 @@ function display_theme_panel_fields()
 	
 	add_settings_field("linkedin_url", "LinkedIn Profile Url", "display_linkedin_element", "theme-options", "section");
     add_settings_field("github_url", "GitHub Profile Url", "display_github_element", "theme-options", "section");
+    add_settings_field("phone_number", "Phone number", "display_phone_element", "theme-options", "section");
     add_settings_field("sidebar-position", "Sidebar position", "display_sidebar_position_element", "theme-options", "section");
 
     register_setting("section", "linkedin_url");
     register_setting("section", "github_url");
+    register_setting("section", "phone_number");
     register_setting("section", "sidebar-position");
 }
 
