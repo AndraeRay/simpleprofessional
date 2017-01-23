@@ -4,7 +4,7 @@
 
 function simpleprofessional_add_logo(){
 	$args = array(
-		'width'         => 100,
+		'width'         => 150,
 		'height'        => 100,
 		'default-image' => get_template_directory_uri() . '/images/header.jpg',
 		'uploads'       => true,
@@ -13,5 +13,6 @@ function simpleprofessional_add_logo(){
 }
 
 add_action( 'after_setup_theme', 'simpleprofessional_add_logo' );
+
 
 ?>
