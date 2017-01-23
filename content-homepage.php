@@ -13,16 +13,21 @@
 
 
 	</header><!-- .entry-header -->
-	<hr>
-	<span> Check out my most recent blog post: </span>
+
+	<?php 
+		$args = array( 'post_type' => 'post', 'posts_per_page' => 1, 'cat' => $term );
+					$loop = new WP_Query( $args ); 
+	?>
+	<?php if ($loop->have_posts()) :?>
+		<hr>
+		<span> Check out my most recent blog post: </span>
+	<?php endif ?>
 	<div class="entry-content">
 		<?php 
 			$term = get_field('category');
 		?>
 
 				<?php
-					$args = array( 'post_type' => 'post', 'posts_per_page' => 1, 'cat' => $term );
-					$loop = new WP_Query( $args );
 					while ( $loop->have_posts() ) : $loop->the_post();
 					  the_title( sprintf( '<h4 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h4>' );
 					  echo '<div class="entry-content">';
