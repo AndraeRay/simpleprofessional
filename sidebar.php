@@ -9,15 +9,10 @@ $NO_SIDEBAR_ID=99;
 	/* return selected sidebar, and default to 1 */
 	$sidebar = intval(get_field('selected_sidebar'));
 	$sidebar = $sidebar == 0 ? 1 : $sidebar;
-
 		
 	if ( !is_active_sidebar($sidebar) || $sidebar === $NO_SIDEBAR_ID ) {
+		remove_action('wp_head', 'simpleprofessional_load_sidebar_styles');
 		simpleprofessional_load_no_sidebar_styles();
-		return;
-	} elseif (get_option('sidebar-position', 'left') == 'left') {
-		simpleprofessional_load_left_sidebar_styles();
-	} else {
-		simpleprofessional_load_right_sidebar_styles();
 	}
 
 ?>
