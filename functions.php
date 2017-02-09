@@ -130,10 +130,6 @@ function simpleprofessional_load_sidebar_styles() {
 add_action('wp_head', 'simpleprofessional_load_sidebar_styles');
 
 
-function simpleprofessional_load_right_sidebar_styles() {
-	wp_enqueue_style( 'content-sidebar', get_template_directory_uri() . '/css/layout/content-sidebar.css', false, '1.1', 'all' );
-}
-
 /**
  * Enqueue scripts and styles.
  */
