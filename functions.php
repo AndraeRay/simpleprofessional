@@ -223,3 +223,12 @@ require get_template_directory() . '/inc/theme-logo.php';
 */
 
 require get_template_directory() . '/inc/theme-options.php';
+
+
+/***
+* Remove Emojis
+*/
+remove_action( 'wp_print_styles', 'print_emoji_styles');
+remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+
+
