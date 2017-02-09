@@ -121,9 +121,12 @@ function simpleprofessional_load_right_sidebar_styles() {
 /**
  * Enqueue scripts and styles.
  */
+
 function simpleprofessional_scripts() {
 
 	wp_enqueue_script('jquery');
+
+	wp_enqueue_style( 'poppins_google', 'https://fonts.googleapis.com/css?family=Poppins:300,500', false, '1.1', 'all' );
 
 	wp_enqueue_style( 'simpleprofessional-style', get_stylesheet_uri() );
 
