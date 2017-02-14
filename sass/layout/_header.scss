@@ -21,6 +21,8 @@
 		top: 0px;
 		line-height: 1.0;
 		display: inline-block;
+		@include px-to-rem(28);
+
 	}
 }
 
