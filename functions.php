@@ -105,8 +105,8 @@ function simpleprofessional_widgets_init() {
 	register_sidebar( array(
 		'name'          => 'Homepage Widget Area',
 		'id'            => 'sp-homepage-widget-area',
-		'before_widget' => '<div>',
-		'after_widget'  => '</div>',
+		'before_widget' => '<div class="homepage-widget-block"> <div class="homepage-widget-content"',
+		'after_widget'  => '</div></div>',
 		'before_title'  => '<h2 class="rounded">',
 		'after_title'   => '</h2>',
 	) );
