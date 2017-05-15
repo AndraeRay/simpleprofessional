@@ -63,3 +63,57 @@
 body {
 	min-width: $size__site-min-width;
 }
+
+.page-template-homepage {
+	#page-inner {
+		max-width: none;
+		padding: 0;
+	}
+}
+
+/* Homepage Widget Area */
+
+#homepage-widget-area {
+	font-size: 25px;
+	margin: 0 auto;
+	float: none;
+	padding: 0;
+
+	h2 {
+		text-align: center;
+	}
+}
+
+.homepage-widget-block {
+	//beige
+	background-color: #F5deb3;
+	padding: 20px 0;
+}
+
+.homepage-widget-content {
+	margin: 0 auto;
+}
+
+.homepage-widget-content-limited {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.homepage-widget-block:nth-child(1) {
+	background-color: #4682b4;
+	color: #fff;
+}
+
+.homepage-widget-block:nth-child(3) {
+	// gray
+	background-color: #3f3a42;
+	color: #fff;
+	a{
+		color: #F5deb3;
+	}
+}
+
+.homepage-widget-block:nth-child(4) {
+	background-color: cadetblue;
+	color: #fff;
+}
