@@ -40,7 +40,7 @@
 						<a href="<?php echo $linkedin_url ?>" target="_blank"><span class="icon linkedin"></span></a>
 					<?php endif ?>
 					<?php if ($phone_number) : ?>
-						<a href="tel:+<?php echo $phone_number ?>"<span class="phone_number"><?php echo $phone_number ?></span></a>
+						<span class="phone_number"><?php echo $phone_number ?></span>
 					<?php endif ?>
 				</span>
 			<?php endif; ?>
@@ -48,6 +48,11 @@
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php _e( '', 'simpleprofessional' ); ?></button>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 			</nav><!-- #site-navigation -->
+			<?php if ($phone_number) : ?>
+				<span id="mobile-phone-number">
+					Tel. <a href="tel:+<?php echo $phone_number ?>"<span class="phone_number"><?php echo $phone_number ?></span></a>
+				</span>
+			<?php endif ?>
 		</header><!-- #masthead -->
 	</div>
 	<div id="page-inner">

@@ -42,3 +42,10 @@ a {
 		font-size: 28px;
 	}
 }
+
+#mobile-phone-number {
+	font-size: 25px;
+	@include non-mobile{
+		display: none;
+	}
+}
