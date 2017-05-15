@@ -34,6 +34,9 @@
 					  the_content();
 					  echo '</div>';
 					endwhile;
+
+					// reset, and lets qurey remember original post
+					wp_reset_postdata()
 				?>
 
 		<?php

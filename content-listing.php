@@ -29,6 +29,9 @@
 					  // echo '</div>';
 					  get_template_part( 'listing', 'body' );
 					endwhile;
+
+					// reset, and lets qurey remember original post
+					wp_reset_postdata()
 				?>
 
 		<?php
