@@ -100,10 +100,20 @@ function simpleprofessional_widgets_init() {
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h2 class="widgettitle">',
 		'after_title'   => '</h2>' 
-	); 
+	);
+
+	register_sidebar( array(
+		'name'          => 'Homepage Widget Area',
+		'id'            => 'sp-homepage-widget-area',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
 
 	register_sidebars( 2, $args );
 }
+
 add_action( 'widgets_init', 'simpleprofessional_widgets_init' );
 
 function simpleprofessional_load_no_sidebar_styles() {
