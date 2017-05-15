@@ -50,7 +50,7 @@
 			</nav><!-- #site-navigation -->
 			<?php if ($phone_number) : ?>
 				<span id="mobile-phone-number">
-					Tel. <a href="tel:+<?php echo $phone_number ?>"<span class="phone_number"><?php echo $phone_number ?></span></a>
+					Tel. <a href="tel:+1<?php echo $phone_number ?>"<span class="phone_number"><?php echo $phone_number ?></span></a>
 				</span>
 			<?php endif ?>
 		</header><!-- #masthead -->
