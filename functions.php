@@ -165,6 +165,15 @@ function simpleprofessional_scripts() {
 add_action( 'wp_enqueue_scripts', 'simpleprofessional_scripts' );
 
 /**
+ * Remove wp version for security reasons
+ *
+ */
+function wpbeginner_remove_version() {
+return '';
+}
+add_filter('the_generator', 'wpbeginner_remove_version');
+
+/**
  * Implement the Custom Header feature.
  */
 //require get_template_directory() . '/inc/custom-header.php';
